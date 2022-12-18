@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Fira Sans';
+    src: local(FiraSans-Regular),
+        url('../fonts/FiraSans-Regular.woff2') format('woff2'),
+        url('../fonts/FiraSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: local(FiraSans-Medium),
+        url('../fonts/FiraSans-Medium.woff2') format('woff2'),
+        url('../fonts/FiraSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: local(FiraSans-SemiBold),
+        url('../fonts/FiraSans-SemiBold_1.woff2') format('woff2'),
+        url('../fonts/FiraSans-SemiBold_1.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: local(FiraSans-Bold),
+        url('../fonts/FiraSans-Bold_1.woff2') format('woff2'),
+        url('../fonts/FiraSans-Bold_1.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --white-color: #ffffff;
+    --whiteSmoke-color: #f4f4f4;;
+    --neroDark-color: #151515;
+    --nero-color: #222222;
+    --suvaGrey-color: #8d8d8d;
+    --han-purple: #3726f2;
+    --midnightBlue-color: #0e046d;
+    --neonBlue-color: #5646e0;
+    --paua-color: #231d5b;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background: var(--whiteSmoke-color);
+    color: var(--suvaGrey-color);
+}
+
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline;
+    border-radius: 0;
+    padding: 13px 26px;
+    border-color: var(--han-purple);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    background: var(--han-purple);
+    color: var(--white-color);
+    transition: background 0.5s ease-in-out;
+}
+
+.btn:focus {
+    background: var(--midnightBlue-color);
+}
+
+.btn:hover {
+    background: var(--neonBlue-color);
+}
+
+.btn:active {
+    background: var(--paua-color);
+}
+
+.nav {
+    padding-top: 59px;
+    margin-bottom: 127px;
+}
+
+.offer-cont__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: var(--neroDark-color);
+}
+
+.offer-cont__text {
+    margin: 30px 0px 56px;
+}
