@@ -51,7 +51,6 @@ html {
 :root {
   --white-color: #ffffff;
   --whiteSmoke-color: #f4f4f4;
-  ;
   --neroDark-color: #151515;
   --nero-color: #222222;
   --suvaGrey-color: #8d8d8d;
@@ -72,6 +71,15 @@ button {
   border: none;
   cursor: pointer;
   background: transparent;
+}
+
+.list-reset {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .vh-dependent {
@@ -98,7 +106,7 @@ h6 {
 .btn {
   display: inline;
   border-radius: 0;
-  padding: 13px 24px;
+  padding: 13px 32px;
   border-color: var(--han-purple);
   font-weight: 500;
   font-size: 14px;
@@ -122,7 +130,7 @@ h6 {
 }
 
 .nav {
-  padding-top: 51px;
+  padding-top: 59px;
   margin-bottom: 127px;
 }
 
@@ -228,4 +236,46 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+}
+
+.services {
+  padding-top: 134px;
+}
+
+.services__label {
+  display: inline-block;
+  margin-bottom: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--suvaGrey-color);
+  opacity: 0.7;
+}
+
+.services__heading {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  color: var(--nero-color);
+}
+
+.services__box {
+  padding-top: 68px;
+  padding-left: 52px;
+}
+
+.services__list-right {
+  margin-left: -20px;
+}
+
+.services__item {
+  margin-bottom: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--nero-color);
+  opacity: 0.5;
 }
