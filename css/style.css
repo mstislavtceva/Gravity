@@ -50,6 +50,7 @@ html {
 
 :root {
   --white-color: #ffffff;
+  --dark-color: #000000;
   --whiteSmoke-color: #f4f4f4;
   --neroDark-color: #151515;
   --nero-color: #222222;
@@ -278,4 +279,128 @@ h6 {
   line-height: 156%;
   color: var(--nero-color);
   opacity: 0.5;
+}
+
+.owl-carousel {
+  margin-top: 97px;
+}
+
+.owl-carousel .item,
+.owl-item {
+  position: relative;
+  width: 824.9px !important;
+}
+
+.owl-nav {
+  display: flex;
+  margin-top: 50px;
+}
+
+.owl-prev {
+  margin-right: 25px;
+}
+
+.owl-prev,
+.owl-next {
+  width: 50px;
+  height: 50px;
+}
+
+.owl-carousel__play {
+  position: absolute;
+  display: block;
+  margin-left: -32.3px;
+  margin-top: -33.3px;
+  border: none;
+  width: 65px;
+  height: 65px;
+  top: 50%;
+  left: 50%;
+  background-image: url('../img/play-btn.svg');
+}
+
+.result {
+  padding-top: 181px;
+}
+
+.result__collage {
+  position: absolute;
+  padding-top: 219px;
+  width: 52%;
+  height: 453px;
+  left: 0;
+  background-image: url('../img/result.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 80.5% 92%;
+}
+
+.result__collage img {
+  position: absolute;
+  display: block;
+  right: 43px;
+  bottom: -99px;
+  width: 350px;
+  height: 453px;
+  box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.result__use {
+  padding-top: 36px;
+  margin-left: 67px;
+}
+
+.result__title {
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: var(--nero-color);
+}
+
+.result__text {
+  margin: 0;
+  margin-left: -2px;
+  margin-bottom: 56px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.result__icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.result__point {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.result__point__first {
+  padding-left: 81px;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  background-image: url('../img/icon-100.svg');
+  background-repeat: no-repeat;
+  background-position: -3px 1px;
+  background-size: 54px 54px;
+}
+
+.result__point__second {
+  padding-left: 81px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-image: url('../img/icon-bag.svg');
+  background-repeat: no-repeat;
+  background-position: -3px 4px;
+  background-size: 54px 54px;
 }
