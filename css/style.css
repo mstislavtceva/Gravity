@@ -74,6 +74,10 @@ button {
   background: transparent;
 }
 
+a {
+  text-decoration: none;
+}
+
 .list-reset {
   display: block;
   color: inherit;
@@ -243,9 +247,7 @@ h6 {
   padding-top: 134px;
 }
 
-.services__label {
-  display: inline-block;
-  margin-bottom: 37px;
+.section-label {
   font-weight: 500;
   font-size: 14px;
   line-height: 171%;
@@ -255,12 +257,17 @@ h6 {
   opacity: 0.7;
 }
 
-.services__heading {
+.section-heading {
   font-weight: 600;
   font-size: 40px;
   line-height: 125%;
   letter-spacing: -1px;
   color: var(--nero-color);
+}
+
+.services__label {
+  display: inline-block;
+  margin-bottom: 37px;
 }
 
 .services__box {
@@ -321,6 +328,7 @@ h6 {
 
 .result {
   padding-top: 181px;
+  padding-bottom: 140px;
 }
 
 .result__collage {
@@ -403,4 +411,80 @@ h6 {
   background-repeat: no-repeat;
   background-position: -3px 4px;
   background-size: 54px 54px;
+}
+
+.works {
+  padding-top: 145px;
+}
+
+.works__box{
+  margin-bottom: 100px;
+}
+
+.works__label {
+  display: inline-block;
+  margin-bottom: 37px;
+}
+
+.works__list {
+  margin-left: 64px;
+  padding-top: 78px;
+}
+
+.works__item a{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #222222;
+  opacity: 0.3;
+}
+
+.active a{
+  color: #1434E1;
+  opacity: 1;
+}
+
+.works-wrap {
+  margin-top: 107px;
+}
+
+.works-wrap__item {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.works-wrap__item img {
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.works-wrap__item:nth-child(2) img {
+  height: 450px;
+}
+
+.works-wrap__item:hover img {
+  box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+  transform: translate(0px, -20px);
+}
+
+.works-wrap__item:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-left: -32px;
+  margin-top: -32px;
+  left: 50%;
+  top: 50%;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/play-btn.svg');
+  background-repeat: no-repeat;
+}
+
+.tabs__content {
+  display: none !important;
+}
+.tabs__content.active {
+  display: flex !important;
 }
