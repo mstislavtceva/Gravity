@@ -288,27 +288,27 @@ h6 {
   opacity: 0.5;
 }
 
-.owl-carousel {
+.services-carousel {
   margin-top: 97px;
 }
 
-.owl-carousel .item,
-.owl-item {
+.services-carousel .item,
+.services-carousel .owl-item {
   position: relative;
   width: 824.9px !important;
 }
 
-.owl-nav {
+.services-carousel .owl-nav {
   display: flex;
   margin-top: 50px;
 }
 
-.owl-prev {
+.services-carousel .owl-prev {
   margin-right: 25px;
 }
 
-.owl-prev,
-.owl-next {
+.services-carousel .owl-prev,
+.services-carousel .owl-next {
   width: 50px;
   height: 50px;
 }
@@ -415,10 +415,15 @@ h6 {
 
 .works {
   padding-top: 145px;
+  padding-bottom: 150px;
 }
 
-.works__box{
+.works__box {
   margin-bottom: 100px;
+}
+
+.works-wrap {
+  margin-bottom: 20px;
 }
 
 .works__label {
@@ -431,17 +436,17 @@ h6 {
   padding-top: 78px;
 }
 
-.works__item a{
+.works__item a {
   font-weight: 500;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #222222;
+  color: var(--nero-color);
   opacity: 0.3;
 }
 
-.active a{
+.active a {
   color: #1434E1;
   opacity: 1;
 }
@@ -485,6 +490,74 @@ h6 {
 .tabs__content {
   display: none !important;
 }
+
 .tabs__content.active {
   display: flex !important;
+}
+
+.works__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--nero-color);
+  opacity: 0.7;
+}
+
+.works__btn {
+  padding: 13.3px 33.3px;
+  margin-top: 2px;
+  margin-left: 33px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.testimonials__title {
+  margin-bottom: 124px;
+}
+
+.testimonials__label {
+  display: inline-block;
+  margin-bottom: 70px;
+}
+
+.testimonials__name {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--nero-color);
+}
+
+.testimonials__post {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.testimonials__photo {
+  display: block;
+  margin-top: 2px;
+}
+
+.testimonials-carousel {
+  position: relative;
+}
+
+.testimonials-carousel .owl-nav {
+  position: absolute;
+  top: 572px;
+  left: 0;
+  display: flex;
+}
+
+.testimonials-carousel .owl-prev {
+  margin-right: 25px;
 }
