@@ -59,6 +59,7 @@ html {
   --midnightBlue-color: #0e046d;
   --neonBlue-color: #5646e0;
   --paua-color: #231d5b;
+  --matterHorn-color: #515151;
 }
 
 body {
@@ -276,11 +277,14 @@ h6 {
 }
 
 .services__list-right {
-  margin-left: -20px;
+  margin-right: 22px;
 }
 
 .services__item {
   margin-bottom: 21px;
+}
+
+.services__item a {
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
@@ -566,6 +570,10 @@ h6 {
   margin-right: 25px;
 }
 
+.clients {
+  padding-bottom: 128px;
+}
+
 .clients__descr {
   padding-top: 8px;
 }
@@ -588,10 +596,17 @@ h6 {
   margin-top: 77.5px;
 }
 
-.clients__item:nth-child(2) {
-  transform: translate(15px, -3px);
+.footer {
+  background: var(--matterHorn-color);
 }
 
-.clients__item:nth-child(4) {
-  transform: translate(17px, 6px);
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.footer__logo {
+  padding-top: 6px;
 }
