@@ -45,7 +45,7 @@ $(function () {
       e.preventDefault();
     $(this)
       .addClass('active').siblings().removeClass('active')
-      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+      .closest('div.tabs').find('ul.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
 
 });

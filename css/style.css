@@ -136,8 +136,40 @@ h6 {
 }
 
 .nav {
-  padding-top: 59px;
+  padding-top: 70px;
   margin-bottom: 127px;
+}
+
+.search {
+  transition: outline .3s ease-in-out, fill .3s ease-in-out;
+}
+
+.search:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--han-purple);
+}
+
+.search:hover svg path{
+  fill: var(--han-purple);
+}
+
+.search:active svg path {
+  fill: var(--midnightBlue-color);
+  outline: none;
+}
+
+.menu:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--han-purple);
+}
+
+.menu:hover svg rect {
+  fill: var(--han-purple);
+}
+
+.menu:active svg rect {
+  fill: var(--midnightBlue-color);
+  outline: none;
 }
 
 .offer {
@@ -162,7 +194,7 @@ h6 {
 
 .hero {
   position: absolute;
-  top: 142px;
+  top: 154px;
   right: 0;
   width: 49%;
   height: 840px;
@@ -290,6 +322,20 @@ h6 {
   line-height: 156%;
   color: var(--nero-color);
   opacity: 0.5;
+  transition: color .3s ease-in-out, outline .3s ease-in-out;
+}
+
+.services__item:focus a {
+  outline-offset: 2px;
+  outline: 2px solid var(--han-purple);
+}
+
+.services__item:hover a {
+  color: var(--han-purple);
+}
+
+.services__item:active a {
+  color: var(--midnightBlue-color);
 }
 
 .services-carousel {
@@ -456,7 +502,14 @@ h6 {
 }
 
 .works-wrap {
-  margin-top: 107px;
+  margin-top: 106px;
+  margin-bottom: 21px;
+}
+
+.works-wrap__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .works-wrap__item {
@@ -464,20 +517,16 @@ h6 {
   margin-bottom: 26px;
 }
 
-.works-wrap__item img {
+.works-wrap__link img {
   transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.works-wrap__item:nth-child(2) img {
-  height: 450px;
-}
-
-.works-wrap__item:hover img {
+.works-wrap__link:hover img {
   box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
   transform: translate(0px, -20px);
 }
 
-.works-wrap__item:hover::after {
+.works-wrap__link:hover::after {
   content: '';
   position: absolute;
   display: block;
@@ -597,6 +646,7 @@ h6 {
 }
 
 .footer {
+  height: 240px;
   background: var(--matterHorn-color);
 }
 
