@@ -201,4 +201,18 @@
   }
 }
 
-@media (max-width: 577px) {}
+@media (max-width: 577px) {
+  .works__descr {
+    margin-bottom: 15px;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .works__btn {
+    margin-left: 25px;
+  }
+
+  .clients__label {
+    margin-left: 137px;
+  }
+}
